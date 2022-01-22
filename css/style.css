@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "page-home.css";
+@import "var.css";
+@import "page-about.css";
+@import "instar.css";
+@import "loading.css";
+.page {
+	height: 100vh;
+}
+.toolbar-support {
+	height: 82px;
+}

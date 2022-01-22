@@ -1,0 +1,84 @@
+.page-about-fullbox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.page-about-like {
+	display: flex;
+	justify-content: space-evenly;
+}
+.page-about-hobby {
+	display: flex;
+	justify-content: space-evenly;
+}
+/* TODO : instar display broken fixed */
+.instargram {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+
+	margin-bottom: 25px;
+}
+.instargram-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* padding: 10px 10px; */
+}
+.instargram-head-icon {
+	display: flex;
+	align-items: center;
+}
+.instargram-head-icon-name {
+	margin-left: 10px;
+	font-family: "Lato", sans-serif;
+	font-size: 11px;
+}
+
+.instargram-tail {
+	display: flex;
+	justify-content: flex-start;
+}
+.instargram-head-icon-picture {
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+}
+.instargram-body > img {
+	width: 100%;
+	height: auto;
+}
+.instargram-tail {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+.instargram-tail > div > span {
+	margin-left: 10px;
+	font-family: "Lato", sans-serif;
+	font-size: 11px;
+}
+.instargram-tail-heart {
+	position: relative;
+}
+.full-heart {
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	color: red;
+}
+@keyframes heart-fill {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		scale: 1.11;
+	}
+}
+/* ToDo : full-heart가 위에 있어서 empty-heart hover가 안먹힘  */
+.full-heart:active {
+	/* will-change: animation; */
+	animation: heart-fill 0.3s ease-in-out forwards;
+}

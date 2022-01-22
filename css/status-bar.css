@@ -1,0 +1,16 @@
+.status-bar-link {
+	text-decoration: none;
+	color: inherit;
+	margin-right: 50px;
+}
+.status-bar-name {
+	margin-left: 50px;
+}
+.status-bar {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(0, 0, 0, 1);
+	padding: 20px 0px;
+	position: fixed;
+}
