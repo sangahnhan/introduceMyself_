@@ -2,19 +2,28 @@
 	0% {
 		opacity: 1;
 	}
-	50% {
+	80% {
 		opacity: 1;
-	}
-	75% {
-		opacity: 1;
+		z-index:444;
 	}
 	100% {
 		opacity: 0;
-		visibillity: hidden;
+		/* visibillity: hidden; */
+		z-index:-1;
 	}
 }
+@keyframes loading {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 #loading-screen {
-	background-color: white;
+	background-color: black;
+	
 	position: fixed;
 	height: 100vh;
 	width: 100vw;
@@ -25,65 +34,65 @@
 	animation: hideloading 8s linear forwards;
 }
 #loading-screen-loading {
+	margin-top:-50px;
+	font-size:50px;
+	color:white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-@keyframes loading {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
+
 .main-bar {
+	margin-top:10px;
 	position: relative;
 }
 .sub-bar {
 	opacity: 0;
 	position: absolute;
 	left: 0;
+	border:0.5px solid black;
+	
+	font-size:42px;
 	animation: loading 0s linear forwards;
 }
 .sub-bar:nth-child(2) {
 	animation-delay: 0.5s;
-	z-index: 10;
+	z-index: 1;
 }
 .sub-bar:nth-child(3) {
 	animation-delay: 1s;
-	z-index: 9;
+	z-index: 2;
 }
 .sub-bar:nth-child(4) {
 	animation-delay: 1.5s;
-	z-index: 8;
+	z-index: 3;
 }
 .sub-bar:nth-child(5) {
 	animation-delay: 2s;
-	z-index: 7;
+	z-index: 4;
 }
 .sub-bar:nth-child(6) {
 	animation-delay: 2.5s;
-	z-index: 6;
+	z-index: 5;
 }
 .sub-bar:nth-child(7) {
 	animation-delay: 3s;
-	z-index: 5;
+	z-index: 6;
 }
 .sub-bar:nth-child(8) {
 	animation-delay: 3.5s;
-	z-index: 4;
+	z-index: 7;
 }
 .sub-bar:nth-child(9) {
 	animation-delay: 4s;
-	z-index: 3;
+	z-index: 8;
 }
 .sub-bar:nth-child(10) {
 	animation-delay: 4.5s;
-	z-index: 2;
+	z-index: 9;
 }
 .sub-bar:nth-child(11) {
 	animation-delay: 5s;
-	z-index: 1;
+	z-index: 10;
 }

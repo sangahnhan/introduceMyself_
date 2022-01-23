@@ -1,5 +1,9 @@
 .page-home {
-	border: var(--border);
+	/* border: var(--border); */
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 .page-home-introduce {
 	display: flex;
@@ -10,4 +14,20 @@
 	font-size: 40px;
 	font-weight: 300;
 	font-family: "Black Han Sans", sans-serif;
+}
+.page-home-cursor:hover{
+	cursor:default;
+}
+.page-home-introduce-name:hover{
+	/* background-color: #B1624E; */
+	color:#F95700;
+	cursor:none;
+}
+.page-home-introduce-style:hover{
+	color:#9FC131;
+	cursor:none;
+}
+.page-home-introduce-job:hover{
+	color:#9000FF;
+	cursor:none;
 }

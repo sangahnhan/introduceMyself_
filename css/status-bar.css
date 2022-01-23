@@ -5,12 +5,20 @@
 }
 .status-bar-name {
 	margin-left: 50px;
+	font-weight: 800;
+}
+.status-bar-name:hover{
+	color:#FEE715;
+	cursor:none;
 }
 .status-bar {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
 	padding: 20px 0px;
 	position: fixed;
+	background-color: rgba(0,0,0,1);
+	color: white;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
 }

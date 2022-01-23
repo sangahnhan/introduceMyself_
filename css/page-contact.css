@@ -1,0 +1,27 @@
+.page-contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-contact-box{
+    display: flex;
+	height: 100%;
+	width: auto;
+    flex-direction: column;
+	justify-content: center;
+    align-items: flex-start;
+    font-size:40px;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 700;
+}
+.page-contact-box-contact{
+    display:flex;
+    margin-top:50px;
+}
+.page-contact-box-contact a{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+	color: inherit;
+}

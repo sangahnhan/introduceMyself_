@@ -1,4 +1,9 @@
 .page-about-fullbox {
+	width:100%;
+	height: 91vh ;
+	margin-top:10px;
+	/* toolbar-support와 instar와의 거리 */
+	/* box-sizing: border-box; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8,23 +13,28 @@
 	justify-content: space-evenly;
 }
 .page-about-hobby {
+	margin-top:10px;
 	display: flex;
 	justify-content: space-evenly;
 }
 /* TODO : instar display broken fixed */
 .instargram {
-	border: 1px solid black;
+	
 	display: flex;
 	flex-direction: column;
 	width: 33%;
+	height:33%;
 
-	margin-bottom: 25px;
+	/* margin-bottom: 25px; */
 }
 .instargram-head {
+	border-top: var(--border);
+	border-left:var(--border);
+	border-right: var(--border);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* padding: 10px 10px; */
+	padding: 10px 10px;
 }
 .instargram-head-icon {
 	display: flex;
@@ -37,6 +47,7 @@
 }
 
 .instargram-tail {
+	
 	display: flex;
 	justify-content: flex-start;
 }
@@ -45,11 +56,18 @@
 	width: 20px;
 	border-radius: 10px;
 }
+.instargram-body{
+	border-left:var(--border);
+	border-right:var(--border);
+}
 .instargram-body > img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 .instargram-tail {
+	border-left:var(--border);
+	border-bottom: var(--border);
+	border-right:var(--border);
 	padding: 10px;
 	display: flex;
 	align-items: center;
