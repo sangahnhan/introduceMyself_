@@ -1,7 +1,7 @@
 .page-about-fullbox {
 	width:100%;
 	height: 91vh ;
-	margin-top:10px;
+	margin-top:5px;
 	/* toolbar-support와 instar와의 거리 */
 	/* box-sizing: border-box; */
 	display: flex;
@@ -13,7 +13,7 @@
 	justify-content: space-evenly;
 }
 .page-about-hobby {
-	margin-top:10px;
+	margin-top:5px;
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -98,5 +98,5 @@
 /* ToDo : full-heart가 위에 있어서 empty-heart hover가 안먹힘  */
 .full-heart:active {
 	/* will-change: animation; */
-	animation: heart-fill 0.3s ease-in-out forwards;
+	animation: heart-fill 0.3s ease-in-out forwards ;
 }
